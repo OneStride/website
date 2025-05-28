@@ -41,14 +41,14 @@ html, body {
   justify-content: flex-start; /* 👈 changed from center */
   align-items: center;
   text-align: center;
-  padding-top: 150px; /* 👈 pushes content down */
+  padding-top: 350px; /* 👈 pushes content down */
   color: black;
 }
 
 .logo {
   max-width: 200px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .headline {
