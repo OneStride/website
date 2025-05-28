@@ -54,4 +54,6 @@ html, body {
 .headline {
   font-size: 2rem;
   font-weight: bold;
+  color: #f1eae4; /* ← new brand color */
 }
+
