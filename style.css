@@ -46,7 +46,7 @@ html, body {
 }
 
 .logo-wrapper {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: flex-end; /* pushes logo to the right */
   padding-right: 60px;       /* fine-tune distance from edge */
