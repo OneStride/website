@@ -1,34 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Inter', sans-serif;
-  background-color: black;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* keep full image */
-  object-position: top center;
-  z-index: 1;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -38,36 +7,20 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertically center */
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding-top: 550px; /* This pushes both logo and text down together */
   color: black;
-  pointer-events: none;
 }
 
 .logo {
-  max-width: 180px;
+  max-width: 200px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* This controls space *between* logo and text */
 }
 
 .headline {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: bold;
-  background: white;
-  padding: 0.5em 1em;
-  border-radius: 8px;
-}
-
-/* 💻 Desktop adjustments */
-@media (min-width: 768px) {
-  .overlay {
-    justify-content: flex-start;
-    padding-top: 300px;
-  }
-
-  .headline {
-    font-size: 2rem;
-  }
 }
