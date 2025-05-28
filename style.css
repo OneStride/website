@@ -24,7 +24,7 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: Top center; /* key part */
+  object-position: top center; /* key part */
   z-index: 1;
 }
 
