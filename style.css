@@ -38,9 +38,10 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* 👈 changed from center */
   align-items: center;
   text-align: center;
+  padding-top: 150px; /* 👈 pushes content down */
   color: black;
 }
 
