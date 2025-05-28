@@ -41,7 +41,7 @@ html, body {
   justify-content: flex-start; /* 👈 changed from center */
   align-items: center;
   text-align: center;
-  padding-top: 540px; /* 👈 pushes content down */
+  padding-top: 550px; /* 👈 pushes content down */
   color: white;
 }
 
