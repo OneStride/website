@@ -1,3 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* show entire image */
+  object-position: top center;
+  z-index: 1;
+  background-color: black; /* in case of letterboxing */
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -10,6 +41,17 @@
   justify-content: flex-start; /* 👈 changed from center */
   align-items: center;
   text-align: center;
-  padding-top: 150px; /* 👈 pushes content down */
+  padding-top: 550px; /* 👈 pushes content down */
   color: black;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.headline {
+  font-size: 2rem;
+  font-weight: bold;
 }
