@@ -6,9 +6,8 @@
 }
 
 html, body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Arial Black', Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: black;
 }
 
 .hero {
@@ -25,7 +24,7 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: bottom center; /* key part */
+  object-position: Top center; /* key part */
   z-index: 1;
 }
 
@@ -40,7 +39,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   text-align: center;
   padding: 20px;
   background: rgba(0, 0, 0, 0.4); /* subtle dark overlay for contrast */
