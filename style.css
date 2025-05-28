@@ -49,6 +49,7 @@ html, body {
   max-width: 260px;
   height: auto;
   margin-bottom: 0px;
+  margin-left: 40px; /* 👈 Adjust this value */
 }
 
 .headline {
