@@ -40,15 +40,15 @@ html, body {
   flex-direction: column;
   justify-content: flex-start; /* 👈 changed from center */
   align-items: center;
-  text-align: Left-Center;
+  text-align: center;
   padding-top: 550px; /* 👈 pushes content down */
   color: white;
 }
 
-.logo {
-  max-width: 240px;
-  height: auto;
-  margin-bottom: 0px;
+.logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ this keeps logo + text horizontally aligned */
 }
 
 .headline {
