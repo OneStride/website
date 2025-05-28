@@ -45,11 +45,11 @@ html, body {
   color: white;
 }
 
-.logo {
-  max-width: 260px;
-  height: auto;
-  margin-bottom: 0px;
-  margin-left: 40px; /* 👈 Adjust this value */
+.logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* pushes logo to the right */
+  padding-right: 60px;       /* fine-tune distance from edge */
 }
 
 .headline {
