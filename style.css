@@ -26,7 +26,7 @@ html, body {
   object-fit: contain; /* show entire image */
   object-position: top center;
   z-index: 1;
-  background-color: white; /* in case of letterboxing */
+  background-color: black; /* in case of letterboxing */
 }
 
 .overlay {
@@ -42,11 +42,11 @@ html, body {
   align-items: center;
   text-align: center;
   padding-top: 550px; /* 👈 pushes content down */
-  color: black;
+  color: white;
 }
 
 .logo {
-  max-width: 280px;
+  max-width: 260px;
   height: auto;
   margin-bottom: 0px;
 }
