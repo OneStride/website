@@ -41,7 +41,7 @@ html, body {
   justify-content: flex-start; /* 👈 changed from center */
   align-items: center;
   text-align: center;
-  padding-top: 400px; /* 👈 pushes content down */
+  padding-top: 500px; /* 👈 pushes content down */
   color: white;
 }
 
@@ -55,6 +55,5 @@ html, body {
   font-size: 1.0rem;
   font-weight: bold;
   color: #EDE5DF; /* ← new brand color */
-  margin: 0;
 }
 
