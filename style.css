@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +7,14 @@
 html, body {
   height: 100%;
   width: 100%;
+  overflow: hidden;
   font-family: 'Inter', sans-serif;
-  background-color: black;
 }
 
 .hero {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
 .background {
@@ -24,66 +22,37 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
-  z-index: 1;
-  object-fit: contain;
+  height: 100%;
+  object-fit: contain; /* show entire image */
   object-position: top center;
+  z-index: 1;
+  background-color: black; /* in case of letterboxing */
 }
 
 .overlay {
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   z-index: 2;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start; /* 👈 changed from center */
   align-items: center;
   text-align: center;
-  padding: 30px 20px;
-  gap: 20px;
+  padding-top: 550px; /* 👈 pushes content down */
+  color: white;
 }
 
-/* Individual Element Control - Mobile First */
 .logo {
-  width: 180px;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.apple-badge {
-  width: 150px;
-  margin-left: 0;
-  margin-right: 0;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 0px;
 }
 
 .headline {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: #EDE5DF;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* Desktop overrides */
-@media (min-width: 768px) {
-  .logo {
-    width: 220px;
-    margin-left: 40px;
-  }
-
-  .apple-badge {
-    width: 180px;
-    margin-left: 60px;
-  }
-
-  .headline {
-    font-size: 1.25rem;
-    margin-left: 80px;
-  }
-
-  .overlay {
-    padding-top: 50px;
-    gap: 30px;
-  }
+  color: #f1eae4; /* ← new brand color */
 }
