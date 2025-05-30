@@ -78,7 +78,7 @@ html, body {
 
   .logo {
     width: 220px;
-    margin-top: 80px; /* 👈 pushes only logo down */
+    margin-top: 150px; /* 👈 pushes only logo down */
   }
 
   .headline {
@@ -87,6 +87,6 @@ html, body {
 
   .apple-badge {
     width: 180px;
-    margin-top: 40px; /* optional */
+    margin-top: 180px; /* optional */
   }
 }
