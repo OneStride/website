@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,6 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
   font-family: 'Inter', sans-serif;
   background-color: black;
 }
@@ -16,6 +16,7 @@ html, body {
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .background {
@@ -23,70 +24,66 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
+  z-index: 1;
   object-fit: contain;
   object-position: top center;
-  z-index: 1;
-  background-color: black;
 }
 
 .overlay {
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 0;
   z-index: 2;
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* default: align items left */
-  text-align: left;
-  gap: 12px;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  gap: 20px;
 }
 
-/* Items */
-
+/* Individual Element Control - Mobile First */
 .logo {
-  width: 160px;
+  width: 180px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.apple-badge {
+  width: 150px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .headline {
   font-size: 1rem;
   font-weight: bold;
   color: #EDE5DF;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.apple-badge {
-  width: 140px;
-  height: auto;
-}
-
-/* 🔁 Desktop overrides */
+/* Desktop overrides */
 @media (min-width: 768px) {
-  .content {
-    align-items: flex-end;     /* align right on desktop */
-    text-align: right;
-    padding-top: 550px; /* 👈 shifts all content down on desktop */
-  }
-
   .logo {
     width: 220px;
-    margin-top: 350px; /* 👈 pushes only logo down */
-  }
-
-  .headline {
-    font-size: 1.25rem;
+    margin-left: 40px;
   }
 
   .apple-badge {
     width: 180px;
-    margin-top: 200px; /* optional */
+    margin-left: 60px;
+  }
+
+  .headline {
+    font-size: 1.25rem;
+    margin-left: 80px;
+  }
+
+  .overlay {
+    padding-top: 50px;
+    gap: 30px;
   }
 }
