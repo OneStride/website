@@ -9,11 +9,12 @@ html, body {
   width: 100%;
   overflow: hidden;
   font-family: 'Inter', sans-serif;
+  background-color: black;
 }
 
 .hero {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -23,10 +24,10 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain; /* show entire image */
+  object-fit: contain;
   object-position: top center;
   z-index: 1;
-  background-color: black; /* in case of letterboxing */
+  background-color: black;
 }
 
 .overlay {
@@ -37,24 +38,52 @@ html, body {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* 👈 changed from center */
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding-top: 550px; /* 👈 pushes content down */
-  color: white;
+  padding: 20px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* default: align items left */
+  text-align: left;
+  gap: 12px;
+}
+
+/* Items */
+
 .logo {
-  max-width: 260px;
-  height: auto;
-  margin-bottom: 0px;
+  width: 160px;
 }
 
 .headline {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: bold;
-  color: #EDE5DF; /* ← new brand color */
-  margin-top: 12px;
+  color: #EDE5DF;
 }
 
+.apple-badge {
+  width: 140px;
+  height: auto;
+}
+
+/* 🔁 Desktop overrides */
+@media (min-width: 768px) {
+  .content {
+    align-items: flex-end;     /* align right on desktop */
+    text-align: right;
+  }
+
+  .logo {
+    width: 220px;
+  }
+
+  .headline {
+    font-size: 1.25rem;
+  }
+
+  .apple-badge {
+    width: 180px;
+  }
+}
