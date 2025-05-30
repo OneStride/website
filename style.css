@@ -73,7 +73,7 @@ html, body {
   .content {
     align-items: flex-end;     /* align right on desktop */
     text-align: right;
-    padding-top: 150px; /* 👈 shifts all content down on desktop */
+    padding-top: 350px; /* 👈 shifts all content down on desktop */
   }
 
   .logo {
