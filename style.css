@@ -73,10 +73,12 @@ html, body {
   .content {
     align-items: flex-end;     /* align right on desktop */
     text-align: right;
+    padding-top: 150px; /* 👈 shifts all content down on desktop */
   }
 
   .logo {
     width: 220px;
+    margin-top: 80px; /* 👈 pushes only logo down */
   }
 
   .headline {
@@ -85,5 +87,6 @@ html, body {
 
   .apple-badge {
     width: 180px;
+    margin-top: 40px; /* optional */
   }
 }
